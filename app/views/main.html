@@ -1,0 +1,13 @@
+<div class="list-group" ng-repeat="(key, peli) in busquedas">
+    <div class="list-group-item">
+        <div class="row-action-primary">
+            <i class="material-icons">folder</i>
+        </div>
+        <div class="row-content">
+            <div class="least-content"><time-ago from-time="{{peli.time}}"></time-ago></div>
+            <h4 class="list-group-item-heading">{{peli.title}} <i>por {{peli.user}}</i></h4>
+            <p class="list-group-item-text"><a href="{{peli.url}}">{{peli.url}}</a></p>
+        </div>
+    </div>
+    <div class="list-group-separator"></div>
+</div>
